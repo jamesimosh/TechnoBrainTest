@@ -13,7 +13,7 @@ public class ServerIPFetch
         Scanner logFileIn = null;
         try
         {
-            logFileIn = new Scanner(new File("/home/bug71c0/Projects/Movetech/Fabonacci/src/fabonacci/server_logs.csv"));
+            logFileIn = new Scanner(new File("/home/bug71c0/Projects/Fabonacci/src/fabonacci/server_logs.csv"));
         }
         catch (FileNotFoundException e)
         {

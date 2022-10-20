@@ -12,12 +12,15 @@ public class Main
     {
 //        System.out.println("test");
         //Get the number input
-//        int numIn = 10;
-//        int result = fabNumber(numIn);
-//        System.out.println(result);
+        int numIn = 10;
+        Scanner reader = new Scanner(System.in);  // Reading from System.in
+        System.out.println("Enter a number: ");
+        numIn = reader.nextInt(); //
+        int result = fabNumber(numIn);
+        System.out.println(result);
         //Server logs
         ServerIPFetch serverIPFetch = new ServerIPFetch();
-        String IP = serverIPFetch.IpGet("/home/bug71c0/Projects/Movetech/Fabonacci/src/fabonacci/server_logs.csv");
+        String IP = serverIPFetch.IpGet("/home/bug71c0/Projects/Fabonacci/src/fabonacci/server_logs.csv");
         System.out.println(IP);
 
         //Word Reverse
